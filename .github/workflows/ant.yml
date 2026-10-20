@@ -1,0 +1,60 @@
+# This workflow will build a Java project with Ant
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-ant
+
+name: Java CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+    - name: Build with Ant
+      run: ant -noinput -buildfile build.xml
+Please paste the contents of your ant.yml file here.
+Once you provide the YAML text, I will translate the Welsh values into English (or any other language you prefer) while keeping your keys, indentation, and structure completely intact.
+Please share:
+• The text content of ant.yml
+• Your preferred target language (e.g., English, Spanish), if it is not English
+The file you provided is a standard GitHub Actions CI configuration written entirely in English. It does not contain any Welsh text to translate.
+If this configuration was generated automatically and you need it translated into Welsh, here is the fully translated file:
+yaml
+# Bydd y llif gwaith hwn yn adeiladu prosiect Java gydag Ant
+# Am ragor o wybodaeth gweler: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-ant
+
+name: Java CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Sefydlu JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+    - name: Adeiladu gydag Ant
+      run: ant -noinput -buildfile build.xml
+Use code with caution.
+If you intended to translate a different version of this file that actually contains Welsh, please paste the correct text or let me know if you need this translated into a different language.
